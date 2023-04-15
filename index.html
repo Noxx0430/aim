@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>AIM練習場</title>
+  </head>
+  <body>
+
+    <div class="special-title" id="specialTitle">超越者</div>
+    <input type="button" value="超越者モードOFF" class="special-off" id="specialOff">
+
+    <div class="start-frame" id="startFrame">
+      <div class="hide-btn" id="hideBtn"></div>
+      <div class="start-title" id="startTitle">AIM練習場</div>
+      <div class="start-description">パソコンでできるAIM練習場です。マウスの使用を推奨します。<div id="headsUp">射撃時に銃声が出ます。音量にご注意ください。</div></div>
+      <input type="button" value="スタート" class="start-btn" id="startBtn">
+      <input type="range" min="10" max="300" step="5" value="60" class="setting-time" id="settingTime">
+      <div class="setting-time-value" id="settingTimeValue">60秒</div>
+    </div>
+
+    <div class="shot-frame" id="shotFrame">
+      <div class="outer-area" id="outerArea">
+        <div class="instruction">ESCキーを押して終了する</div>
+        <div class="timer" id="timer"><div>Timer</div>1000</div>
+        <div class="point" id="point">3</div>
+        <div class="shot-area" id="shotArea">
+        </div>
+      </div>
+    </div>
+
+    <div class="result-frame" id="resultFrame">
+      <div class="result-title">スコア</div>
+      <div class="result-1"><span>評価</span><span id="resultAssessment"></span><span></span></div><br>
+      <div><span>スコア</span><span id="resultScore"></span><span>点</span></div><br>
+      <div><span>Hit数</span><span id="resultHit"></span><span>Hit</span></div><br>
+      <div><span>Miss数</span><span id="resultMiss"></span><span>Miss</span></div><br>
+      <div><span>命中率</span><span id="resultAccuracy"></span><span>%</span></div><br>
+      <div><span>1分当たりのHit数</span><span id="resultHPT"></span><span>Hit</span></div><br>
+      <input type="button" value="終了" class="finish-btn" id="finishBtn">
+    </div>
+
+    <div class="hide-frame">
+      <div id="shotCounter"></div>
+      <div id="backTime"></div>
+      <div id="finishCheck"></div>
+      <div id="clickCount"></div>
+      <div id="targetSize"></div>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
